@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  exceptionvsresult.webapi:
+    image: ${DOCKER_REGISTRY-}exceptionvsresultwebapi
+    build:
+      context: .
+      dockerfile: ExceptionVsResult.WebApi/Dockerfile
